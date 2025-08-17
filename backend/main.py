@@ -200,6 +200,21 @@ async def transcribe(file: UploadFile = File(...), input_lang: str = Form("en"))
         try: os.remove(tmp_path)
         except: pass
 
+def translate_via_groq(text: str, source_lang: str, target_lang: str) -> str:
+    if not GROQ_API_KEY or not Groq:
+        raise RuntimeError("Groq translation not available")
+    client = Groq(api_key=GROQ_API_KEY)
+    prompt = (
+        f"Translate the following medical text from {source_lang} to {target_lang}. "
+        f"Use accurate medical terms and be concise:\n\n{text}"
+    )
+    chat = client.chat.completions.create(
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+    )
+    return chat.choices[0].message.content.strip()
+
 @app.post("/translate")
 async def translate(
     text: str = Form(...),
@@ -229,3 +244,4 @@ async def tts(
         return FileResponse(out_path, media_type="audio/mpeg", filename="speech.mp3")
     except Exception as e:
         raise HTTPException(500, f"TTS failed: {e}")
+
