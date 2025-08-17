@@ -29,6 +29,7 @@ if OPENAI_API_KEY and openai:
 
 app = FastAPI(title="Healthcare Translation API")
 
+
 # CORS (allow your Vercel app)
 app.add_middleware(
     CORSMiddleware,
@@ -37,6 +38,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/")
+def root():
+    return {"status": "ok"}
+
 
 @app.get("/health")
 def health():
