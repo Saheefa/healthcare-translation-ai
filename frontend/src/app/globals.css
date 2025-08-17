@@ -1,0 +1,96 @@
+/* @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+@import "tailwindcss";
+
+/* ---------- Theme Variables ---------- */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --border: #d1d5db; /* light gray border */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --border: #374151; /* dark gray border */
+  }
+}
+
+/* ---------- Global Styles ---------- */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Reusable Utility Classes ---------- */
+.box {
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+/* Transcript sections */
+.transcript-box {
+  @apply box;
+}
+
+/* Headings inside boxes */
+.transcript-box h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+/* Buttons */
+button {
+  background-color: var(--foreground);
+  color: var(--background);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}

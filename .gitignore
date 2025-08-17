@@ -1,0 +1,42 @@
+# --------------------
+# Node / Frontend
+# --------------------
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
+frontend/coverage
+frontend/next-env.d.ts
+frontend/*.tsbuildinfo
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# --------------------
+# Python / Backend
+# --------------------
+backend/__pycache__/
+backend/*.pyc
+backend/.venv/
+backend/env/
+backend/.pytest_cache/
+
+# --------------------
+# Env & Secrets
+# --------------------
+.env
+*.pem
+
+# --------------------
+# Misc
+# --------------------
+.DS_Store
