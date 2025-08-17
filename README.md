@@ -22,6 +22,9 @@ healthcare-translation-ai/
 │── .gitignore # Ignore files for Node + Python
 │── README.md # Project documentation
 
+yaml
+Copy
+Edit
 
 ---
 
@@ -31,34 +34,33 @@ healthcare-translation-ai/
 ```bash
 git clone https://github.com/Saheefa/healthcare-translation-ai.git
 cd healthcare-translation-ai
-
 2️⃣ Frontend Setup (Next.js)
+bash
+Copy
+Edit
 cd frontend
 npm install
 npm run dev
-
-
 Frontend runs by default at 👉 http://localhost:3000
 
 3️⃣ Backend Setup (FastAPI)
+bash
+Copy
+Edit
 cd backend
 python -m venv .venv
 source .venv/bin/activate   # (Linux/Mac)
 .venv\Scripts\activate      # (Windows)
 pip install -r requirements.txt
 uvicorn main:app --reload
-
-
 Backend runs by default at 👉 http://127.0.0.1:8000
 
 🌐 Deployment
-
 Frontend → Deploy on Vercel
 
 Backend → Deploy on Render or any cloud service that supports FastAPI
 
 🛠 Tech Stack
-
 Frontend → Next.js, React, TailwindCSS
 
 Backend → FastAPI, Python, Uvicorn
@@ -68,7 +70,6 @@ AI Models → OpenAI Whisper / Hugging Face / Google Cloud Speech-to-Text
 Deployment → Vercel + Render
 
 📖 Future Enhancements
-
 ✅ Add medical-specific vocabulary tuning
 
 ✅ Support offline transcription
@@ -76,9 +77,8 @@ Deployment → Vercel + Render
 ✅ HIPAA-compliant data storage
 
 🤝 Contributing
-
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
 📜 License
-
 This project is licensed under the MIT License – feel free to use and modify.
+
