@@ -33,7 +33,9 @@ app = FastAPI(title="Healthcare Translation API")
 # CORS (allow your Vercel app)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://healthcare-translation-ai-git-main-sahifa-hashmis-projects.vercel.app"],  # tighten later to your Vercel domain
+    allow_origins=["https://healthcare-translation-ai.vercel.app",
+        "https://healthcare-translation-ai-git-main-sahifa-hashmis-projects.vercel.app",
+        "https://healthcare-translation-81crv7eyn-sahifa-hashmis-projects.vercel.app"],  # tighten later to your Vercel domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
