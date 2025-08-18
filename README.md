@@ -6,12 +6,12 @@ This project enables healthcare professionals to convert speech into text, trans
 ---
 
 ## 📌 Features
-- 🎙 **Voice-to-Text** – Convert spoken medical conversations into accurate text.
+- 🎙 **Voice-to-Text** – Convert spoken medical conversations into accurate text using Groq Whisper API.
 - 🌍 **Translation** – Real-time translation into multiple languages.
 - 🧠 **Generative AI** – Enhanced transcription accuracy for medical terms.
 - 🔄 **Frontend** – Next.js + Tailwind UI for clean and responsive design.
 - ⚡ **Backend** – FastAPI for transcription, translation, and AI-powered processing.
-- ☁ **Deployment** – Ready for **Vercel (frontend)** and **Render (backend)**.
+- ☁ **Deployment** – **Vercel (frontend)** and **Railway (backend)**.
 
 ---
 
