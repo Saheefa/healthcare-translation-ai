@@ -22,9 +22,7 @@ healthcare-translation-ai/
 │── .gitignore # Ignore files for Node + Python
 │── README.md # Project documentation
 
-yaml
-Copy
-Edit
+
 
 ---
 
