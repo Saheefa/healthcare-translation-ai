@@ -56,7 +56,7 @@ Backend runs by default at 👉 http://127.0.0.1:8000
 🌐 Deployment
 Frontend → Deploy on Vercel
 
-Backend → Deploy on Render or any cloud service that supports FastAPI
+Backend → Deploy on Railway or any cloud service that supports FastAPI
 
 🛠 Tech Stack
 Frontend → Next.js, React, TailwindCSS
@@ -65,7 +65,7 @@ Backend → FastAPI, Python, Uvicorn
 
 AI Models → OpenAI Whisper / Hugging Face / Google Cloud Speech-to-Text
 
-Deployment → Vercel + Render
+Deployment → Vercel + Railway
 
 📖 Future Enhancements
 ✅ Add medical-specific vocabulary tuning
