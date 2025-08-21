@@ -11,7 +11,7 @@ This project enables healthcare professionals to convert speech into text, trans
 - 🧠 **Generative AI** – Enhanced transcription accuracy for medical terms.
 - 🔄 **Frontend** – Next.js + Tailwind UI for clean and responsive design.
 - ⚡ **Backend** – FastAPI for transcription, translation, and AI-powered processing.
-- ☁ **Deployment** – **Vercel (frontend)** and **Railway (backend)**.
+- ☁ **Deployment** – Vercel (frontend) and Railway (backend).
 
 ---
 
